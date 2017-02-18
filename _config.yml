@@ -17,3 +17,5 @@ github_username:  sachin147
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-cayman
