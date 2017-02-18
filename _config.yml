@@ -8,6 +8,7 @@
 # Site settings
 title: Programmierung
 email: tiwarisachin147@gmail.com
+linkedin: https://in.linkedin.com/in/sachint147
 description: > # this means to ignore newlines until "baseurl:"
   Get all the know-hows of programming right here.
 baseurl: "" # the subpath of your site, e.g. /blog

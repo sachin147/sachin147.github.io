@@ -13,6 +13,12 @@ Since its potrays, reflects a design of a system, the more clean, precise, expre
 </p>
 
 <p>
+    APIs create a base for various business integrations.
+    APIs reflect business model.
+    APIs reflect 'UI of business'.
+</p>
+
+<p>
     RESTful web APIs work around resources in a system.
     You might probably need to go through understanding of 'what is REST'.
     For eg: A user can be identified as a resource, A vehicle is a resource.
@@ -47,7 +53,7 @@ Since its potrays, reflects a design of a system, the more clean, precise, expre
     For eg:
     <ul>
         <li>/books : To create(POST) book, To fetch(GET) books list, To update(PUT) books, To delete(DELETE) books </li>
-        <li>/book/123 : To create(POST) book, To fetch(GET) book with id 123, To update(PUT) book with id 123, To delete(DELETE) book with id 123 </li>
+        <li>/book/123 : To create(POST) book, To fetch(GET) book with id 123, To update(PUT) book with id 123,  To partially update(PATCH) book, To delete(DELETE) book with id 123 </li>
     </ul>
     
 </p>
@@ -97,6 +103,14 @@ Since its potrays, reflects a design of a system, the more clean, precise, expre
 </p>
 
 <p>
+    <h4>JSON is in, XML is old</h4>
+</p>
+
+<p>
+    <h4>Use camelCase for attributes in json response</h4>
+</p>
+
+<p>
     <h4>Versioning</h4>
     Specify version with a 'v'prefix and an integral number to the url base.
     <li>/v1/books</li>
@@ -111,6 +125,67 @@ Since its potrays, reflects a design of a system, the more clean, precise, expre
 </p>
 
 <p>
+    <h4>Sorting</h4>
+    Use a sort parameter. Put a '-' in front of sort parameter to indicate descending sort.
+    <li>/books?sort=-rating</li>
+</p>
+
+<p>
+    <h4>Searching</h4>
+    A search value for global or local search can be indicated by 'q'
+    <li>/book?q=searchparam</li>
+</p>
+
+<p>
     <h4>Partial Response</h4>
     Partial response is helpful when response is huge and you dont want each detail of a resource. It is helpful in utilizing bandwidth.
 </p>
+
+<p>
+    <h4>GZIP - Compress your response</h4>
+    This can help utilize bandwidth
+</p>
+
+<p>
+    <h4>no resource situation</h4>
+    In such situations there may not exist any resource around which api can be written. Use verbs in such situation
+    For eg: translating a word from one language to another
+    <li>/translate?from=ENG&to=HIN</li>
+</p>
+
+<p>
+    <h4>Authentication</h4>
+    OAuth2.0 to the rescue!
+</p>
+
+<p>
+    <h4>Authorization</h4>
+    Authorization cannot be handled by API. It can only be handled at service layer.
+</p>
+<p>
+    <h4>Use HTTP headers wisely</h4>
+    In case of overriding HTTP method, caching, CORS, rate limiting.
+</p>
+<p>
+    <h4>Use HTTPS</h4>
+</p>
+
+<p>
+    <h4>Validate input at server</h4>
+</p>
+
+<p>
+    <h4>Using API key</h4>
+    This is can perhaps be used to identify/authenticate origin of request. It is generally used for commercial APIs.
+</p>
+
+<p>
+    <h4>Document your API</h4>
+</p>
+
+<p>
+    <h4>My favourite API 10/10</h4>
+    <li><a href="https://developer.github.com/v3/">Github API</a></li>    
+</p>
+
+
